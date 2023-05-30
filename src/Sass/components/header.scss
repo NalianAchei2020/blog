@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+header{
+    height:70px;
+    background-color:$bg;
+    padding-top: 10px;
+    
+}
+.nav{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height:27px;
+    align-items: center;
+    justify-items: center;
+
+    .sec1{
+        display: flex;
+        gap:2rem;
+        font-size:$fs30;
+    }
+    .sec3{
+        @extend .sec1
+    }
+}
+.sec2{
+    span:first-child{
+        color: $color3;
+        background-color:$bg01;
+        font-size: 27px;
+    }
+    span:last-child{
+        font-size:$fs40;
+        font-weight: 600;
+        em{
+            color: $bg01;
+        }
+    }
+}
