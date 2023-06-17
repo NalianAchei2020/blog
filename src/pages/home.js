@@ -58,7 +58,9 @@ const Home = () => {
             </section>
 
             <section className='container-two'>
-                
+               <div className='col01'>
+                </div> 
+               <div className='col02'></div>
             </section>
 
 
