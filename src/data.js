@@ -90,9 +90,9 @@ export const authorData = [
         name:"Jenny Kia",
         image:"Images/profile5.jpeg",
         profession:"Fashion Designer, Blogger, Activist",
-        facebook:"Images/icons/facebook.png",
-        instagram:"Images/icons/instagram.png",
-        twiiter:"Images/icons/twitter.png"
+        facebook:"http://facebook.com/name",
+        instagram:"http://instagram.com/name",
+        twiiter:"http://twitter.com/name"
         
     },
     {

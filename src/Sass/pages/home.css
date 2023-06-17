@@ -57,7 +57,7 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 1em;
-  max-width: 800px;
+  max-width: 400px;
 }
 @media (min-width: 48em) {
   .container-one .col1 .row-flex {

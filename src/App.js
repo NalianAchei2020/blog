@@ -2,7 +2,7 @@ import './Sass/index.scss'
 import {BrowserRouter as Router,
   Routes,
   Route,
-  Link} from 'react-router-dom';
+  } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './pages/home';
 
