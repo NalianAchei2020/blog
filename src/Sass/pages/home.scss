@@ -139,3 +139,64 @@
     background-color: $bg01;
     color: #fff;
 }
+
+.container-two{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+
+    .author-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding-right: 2rem;
+        width: 100%;
+
+        .author-image{
+         width: 80px;
+         height: 80px;
+         border-radius: 50%;
+        }
+    }
+
+    .author-name{
+        font-size: $fs40;
+        font-weight: 600;
+    }
+    .author-text{
+        p{
+            font-size: $fs10;
+            font-weight: 300;
+        }
+        .item{
+            color: #999999;
+            position: relative;
+            top: -15%;
+            right: -10%;
+        }
+        .list-item{
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(196, 196, 196, 1);
+            border-radius: 3px;
+            :hover{
+                color: #00AAA1
+                 }
+        }
+    }
+
+    .section2{
+     max-width: 361px;
+     width: 100%;
+     height: 300px;
+     background: #00AAA1;
+     margin-block: 1em;
+     padding: 10px;
+     color: #fff;
+    }
+}

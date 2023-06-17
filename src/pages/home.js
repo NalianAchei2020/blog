@@ -60,20 +60,21 @@ const Home = () => {
 
             <section className='container-two'>
                <section className='col01'>
-                <h3><span className='col-title'>Recently</span> Posted</h3>
+                <h3 className='mb-5'><span className='col-title'>Recently</span> Posted</h3>
                 {Data.map((item)=>{
                     return(
-                       <section className='row-flex01'>
+                       <section className='mb-5 row-flex01'>
                         <section>
                             <img src={item.image} alt='travel' className='image-one'/>
-                            <div className='card-text01'>
+                            <div className='card-text'>
                            <span className='category'>{item.category}</span>
-                           <h5 className='title'>{item.title}</h5>
+                           <h1 className='mt-2 mb-2 title'>{item.title}</h1>
                            <ul className='list-unstyled d-flex flex-row gap-3 items'>
                             <li><img src={item.authorPicture} alt='authors phot' className='iamge-round'/></li>
                             <li className='text-nowrap'>{item.date}</li>
                             <li className='text-nowrap'>{item.time}</li>
                            </ul>
+                           <p className='w-76'>{item.desc}</p>
                            </div>
                         </section>
                        </section>
@@ -82,23 +83,27 @@ const Home = () => {
                 </section> 
                <section className='col02'>
                 <section className='section1'>
-                    <h3><span className='col-title'>Top</span>authors</h3>
+                    <h3 className='mb-5'><span className='col-title'>Top</span> Authors</h3>
                     {authorData.map((item)=>{
                         return(
-                            <section className='author-flex'>
+                            <section className='mt-5 author-flex'>
                             <img src={item.image} alt='author-pic' className='author-image' />
                             <div className='author-text'>
                                 <span className='author-name'>{item.name}</span>
-                                <p>{item.profession}</p>
-                                <ul className='list-group list-unstyled d-flex flex-row gap-2'>
-                                    <li class="list-group-item active">
-                                    <a href={item.facebook}> <i className="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <p className='mt-2 mb-2'>{item.profession}</p>
+                                <ul className='list-unstyled d-flex flex-row gap-2'>
+                                    <li className='list-item active'>
+                                    <a href={item.facebook}> <i className="fa fa-facebook-square item" aria-hidden="true"></i></a>
                                     </li>
-                                    <li class="list-group-item">
-                                     <a href={item.twiiter}><i className="fa fa-twitter-square" aria-hidden="true"></i></a>   
+                                    <li  className='list-item'>
+                                     <a href={item.twiiter}>
+                                        <i className="fa fa-twitter-square item" aria-hidden="true"></i>
+                                        </a>   
                                     </li>
-                                    <li class="list-group-item">
-                                    <a href={item.instagram}><i className="fa fa-instagram" aria-hidden="true"></i></a>  
+                                    <li  className='list-item'>
+                                    <a href={item.instagram}>
+                                        <i className="fa fa-instagram item" aria-hidden="true"></i>
+                                        </a>  
                                     </li>
                                 </ul>
                             </div>
@@ -121,7 +126,7 @@ const Home = () => {
                     </div>
                 </section>
                 <section className='section3'>
-                  <h3>
+                  <h3 className='mb-5'>
                     <span className='col-title'>Categories</span>
                     </h3> 
                     <ul className='list-unstyled d-flex flex-row
@@ -156,7 +161,7 @@ const Home = () => {
                     <hr/>
                 </section>
                 <section className='section4'>
-                   <h3><span className='col-title'>Today’s</span>update</h3>
+                   <h3 className='mb-5'><span className='col-title'>Today’s</span>update</h3>
                    <section className='boxes'>
                    <div className='box'>
                     <h2>14</h2>
@@ -177,7 +182,7 @@ const Home = () => {
                     </section>
                 </section>
                 <section className='section5'>
-                  <h3><span className='col-title'>Instagram </span>posts</h3> 
+                  <h3 className='mb-5'><span className='col-title'>Instagram </span>posts</h3> 
                   <section className='instagram-post'>
                     <a href='instagram'>
                         <img src='Images/insta3.jpeg' alt='instagram-post' width={113} height={114}/>
@@ -209,7 +214,7 @@ const Home = () => {
                     </section> 
                 </section>
                 <section className='section6'>
-                 <h3><span className='col-title'>Search</span> with tags</h3>
+                 <h3 className='mb-5'><span className='col-title'>Search</span> with tags</h3>
                 </section>
                </section>
             </section>
