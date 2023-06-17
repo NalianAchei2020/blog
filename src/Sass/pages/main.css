@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+.container-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 45em) {
+  .container-card {
+    flex-direction: row;
+  }
+}
+
+.container-one {
+  width: 100%;
+  min-width: 20em;
+  background-color: rgb(242, 248, 247);
+  padding: 3em;
+}
+.container-one .col1 {
+  width: 100%;
+}
+.container-one .col1 .col-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.iamge-round {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.image-one {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-two {
+  width: 129px;
+  height: 115px;
+  border-radius: 5px;
+}/*# sourceMappingURL=main.css.map */

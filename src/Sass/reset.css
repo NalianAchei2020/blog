@@ -1,10 +1,10 @@
-@use "variables" as *;
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font:inherit;
+  font: inherit;
 }
 
 /* Remove default margin */
@@ -22,8 +22,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -33,9 +33,10 @@ html:focus-within {
 }
 
 html,
-body{
+body {
   height: 100%;
 }
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -44,39 +45,42 @@ body {
   line-height: 1.5;
   font-family: Helvetica, sans-serif;
   overflow-x: hidden;
-  @media screen and (min-width:48em ) {
+}
+@media screen and (min-width: 48em) {
+  body {
     min-width: 45em;
   }
 }
 
-a{
+a {
   text-decoration: none;
-  color:black;
-}
-a:hover{
   color: black;
 }
+
+a:hover {
+  color: black;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
 img,
 picture,
-svg{
+svg {
   max-width: 100%;
   display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
   *,
   *::before,
   *::after {
@@ -86,47 +90,52 @@ svg{
     scroll-behavior: auto !important;
   }
 }
-
-h1{
-  font-size: $H1;
+h1 {
+  font-size: 27px;
   font-weight: 800;
   text-transform: capitalize;
 }
-h2{
-  font-size: $H2;
-  font-weight:600;
-  text-transform: capitalize;
 
-}
-h3{
-  font-size: $H3;
-  font-weight:600;
+h2 {
+  font-size: 24px;
+  font-weight: 600;
   text-transform: capitalize;
 }
-h4{
-  font-size: $H4;
-  font-weight:600;
+
+h3 {
+  font-size: 21px;
+  font-weight: 600;
   text-transform: capitalize;
 }
-h5{
-  font-size: $H5;
-  font-weight:600;
+
+h4 {
+  font-size: 19px;
+  font-weight: 600;
   text-transform: capitalize;
 }
-h6{
-  font-size: $H6;
-  font-weight:600;
+
+h5 {
+  font-size: 17px;
+  font-weight: 600;
   text-transform: capitalize;
 }
-body{
-  font-family:$ff;
+
+h6 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
-button{
-  background:$bg01;;
-  color:$color3;
-  border-radius:5px;
+
+body {
+  font-family: "Noto Sans", cursive;
+}
+
+button {
+  background: rgb(0, 170, 161);
+  color: #FFFFFF;
+  border-radius: 5px;
   text-align: center;
   border: none;
-  outline:none;
-  font-size: $fs30;
-}
+  outline: none;
+  font-size: 15px;
+}/*# sourceMappingURL=reset.css.map */
