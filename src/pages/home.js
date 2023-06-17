@@ -180,7 +180,31 @@ const Home = () => {
                   <h3><span className='col-title'>Instagram </span>posts</h3> 
                   <section className='instagram-post'>
                     <a href='instagram'>
-                        <img src='Images' alt='instagram-post' />
+                        <img src='Images/insta3.jpeg' alt='instagram-post' width={113} height={114}/>
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta.jpeg' alt='instagram-post' width={113} height={114} />
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta1.jpeg' alt='instagram-post' width={113} height={114} />
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta2.jpeg' alt='instagram-post'  width={113} height={114} />
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta3.jpeg' alt='instagram-post'  width={113} height={114} />
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta4.jpeg' alt='instagram-post'  width={113} height={114}/>
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta1.jpeg' alt='instagram-post'  width={113} height={114}/>
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta4.jpeg' alt='instagram-post'  width={113} height={114}/>
+                    </a>
+                    <a href='instagram'>
+                        <img src='Images/insta1.jpeg' alt='instagram-post'  width={113} height={114}/>
                     </a>
                     </section> 
                 </section>
