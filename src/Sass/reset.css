@@ -43,7 +43,7 @@ body {
   min-width: 20em;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: Helvetica, sans-serif;
+  font-family: "Noto Sans", cursive;
   overflow-x: hidden;
 }
 @media screen and (min-width: 48em) {

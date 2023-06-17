@@ -42,7 +42,7 @@ body {
   min-width: 20em;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: Helvetica, sans-serif;
+  font-family: $ff;
   overflow-x: hidden;
   @media screen and (min-width:48em ) {
     min-width: 45em;

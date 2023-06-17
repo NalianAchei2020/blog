@@ -9,9 +9,9 @@ const Home = () => {
     console.log(firstTwoItems);
     return (
         <div className='container-flex'>
-            <div className='container-one'>
+            <section className='container-one'>
                 <div className='col1 mb-5'>
-                    <h3 className='mb-5'><span>Featured</span> This month</h3>
+                    <h3 className='mb-5'><span className='col-title'>Featured</span> This month</h3>
                { firstTwoItems.map((item)=>{
                     return(
                         <div className='row-flex'>
@@ -20,8 +20,8 @@ const Home = () => {
                            </div>
                            <div className='card-text'>
                            <span className='category'>{item.category}</span>
-                           <h1 className='title'>{item.title}</h1>
-                           <ul className='list-unstyled d-flex flex-row flex-wrap gap-3'>
+                           <h1 className='m-2 title'>{item.title}</h1>
+                           <ul className='list-unstyled d-flex flex-row gap-3 items'>
                             <li><img src={item.authorPicture} alt='authors phot'  className='iamge-round'/></li>
                             <li className='text-nowrap'>{item.date}</li>
                             <li className='text-nowrap'>{item.time}</li>
@@ -32,20 +32,19 @@ const Home = () => {
                     )
                 })}
                 </div>
-                <div className='col2'>
-                </div>
+                <div className='col2'></div>
                 <div className='col3'>
-                <h3 className='mb-2'><span>popular</span> Posted</h3>
+                <h3 className='mb-5'><span className='col-title'>popular</span> Posted</h3>
                {firstfourItems.map((item)=>{
                     return(
-                        <div className='d-flex flex-row gap-3 mt-5 p-16'>
+                        <div className='row-flex2 p-16'>
                            <div className='cart-image'>
                            <img src={item.image} alt='travel' className='image-two' />
                            </div>
-                           <div className='card-text'>
+                           <div className='card-text2'>
                            <span className='category'>{item.category}</span>
                            <h5 className='title'>{item.title}</h5>
-                           <ul className='list-unstyled d-flex flex-row gap-3'>
+                           <ul className='list-unstyled d-flex flex-row gap-3 items'>
                             <li><img src={item.authorPicture} alt='authors phot' className='iamge-round'/></li>
                             <li className='text-nowrap'>{item.date}</li>
                             <li className='text-nowrap'>{item.time}</li>
@@ -56,7 +55,12 @@ const Home = () => {
                 })} 
 
                 </div>
-            </div>
+            </section>
+
+            <section className='container-two'>
+                
+            </section>
+
 
         </div>
     )}

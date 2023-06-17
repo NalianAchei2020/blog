@@ -14,10 +14,9 @@
 }
 
 .container-one {
-  width: 100%;
   min-width: 20em;
   background-color: rgb(242, 248, 247);
-  padding: 3em;
+  padding: 1.5em;
 }
 @media (min-width: 48em) {
   .container-one {
@@ -38,18 +37,17 @@
 .container-one .col1 {
   width: 100%;
 }
-@media (min-width: 48em) {
+@media (48em <= width <= 74em) {
   .container-one .col1 {
-    width: 60%;
+    width: 70%;
+  }
+  .container-one .col1 .title {
+    font-size: 1.5rem !important;
   }
 }
 @media (min-width: 75em) {
-  .container-one .col1 .col2 {
-    width: 2px;
-    height: 671px;
-    background-color: rgb(0, 170, 161);
-    color: red;
-    border-radius: 3px;
+  .container-one .col1 {
+    width: 60%;
   }
 }
 .container-one .col1 .row-flex {
@@ -57,14 +55,23 @@
   flex-direction: column;
   margin-bottom: 2em;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 1em;
+  max-width: 800px;
 }
 @media (min-width: 48em) {
   .container-one .col1 .row-flex {
     flex-direction: row;
     gap: 1rem;
+    max-width: 100%;
+    height: 319px;
   }
+}
+.container-one .card-text {
+  width: 100%;
+}
+.container-one .card-text p {
+  font-size: 15px;
 }
 @media (min-width: 48em) {
   .container-one .card-text {
@@ -72,12 +79,28 @@
   }
 }
 
+@media (min-width: 48em) {
+  .col2 {
+    height: 630px;
+    background-color: rgb(0, 170, 161);
+    border-radius: 3px;
+    width: 1px;
+    margin-top: 4.5rem;
+  }
+}
+
 .col3 {
   width: 100%;
 }
-@media (min-width: 48em) {
+@media (48em <= width <= 74em) {
+  .col3 {
+    width: 40%;
+  }
+}
+@media (min-width: 75em) {
   .col3 {
     width: 37%;
+    margin-left: 2rem;
   }
 }
 .col3 .image-two {
@@ -101,6 +124,42 @@
 .image-one {
   max-width: 373px;
   width: 100%;
-  height: 271px;
+  height: 80%;
   border-radius: 5px;
+}
+
+.items li {
+  font-size: 12px;
+}
+
+.category {
+  font-size: 12px;
+  background-color: rgb(223, 241, 240);
+  color: #666666;
+}
+
+.row-flex2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2em;
+  gap: 1rem;
+}
+.row-flex2 .card-text2 {
+  width: 95%;
+}
+@media (48em <= width <= 74em) {
+  .row-flex2 .card-text2 {
+    width: 100%;
+  }
+}
+@media (min-width: 75em) {
+  .row-flex2 .card-text2 {
+    width: 55%;
+  }
+}
+
+.col-title {
+  background-color: rgb(0, 170, 161);
+  color: #fff;
 }/*# sourceMappingURL=home.css.map */
