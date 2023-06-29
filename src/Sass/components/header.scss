@@ -1,11 +1,74 @@
 @use "../variables" as *;
-
 header{
-    height:70px;
+    display: flex;
+    justify-content: space-between;
     background-color:$bg;
-    padding-top: 10px;
-    
+    padding: .5em 1em;
+    width: 100%;
+    .mobile-head{
+        display: flex;
+        gap: 1em;
+        margin-inline: .5em;
+    }
+
+    .hamberger {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        gap: .5em;
+        div i{
+        font-size: 2rem;
+        color: 222222;
+    }
 }
+}
+.sec2{
+    span:first-child{
+        color: $color3;
+        background-color:$bg01;
+        font-size: 27px;
+    }
+    span:last-child{
+        font-size:$fs40;
+        font-weight: 600;
+        em{
+            color: $bg01;
+        }
+    }
+}
+.nav{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    background-color:#fff;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding-inline: 4em ;
+    padding-block: 2em;
+    height: 500px;
+    transition: all;
+    visibility: hidden;
+
+}
+.nav-items{
+    margin-block: 2em;
+}
+
+.sec3{
+    display: none;
+}
+
+#close{
+    display: none;
+}
+
+
+@media screen and (min-width:75em) {
+
+    header{
+        display: none;
+    }
 .nav{
     display:flex;
     flex-flow: row nowrap;
@@ -13,6 +76,8 @@ header{
     height:27px;
     align-items: center;
     justify-items: center;
+    height:70px;
+    background-color:$bg;
 
     .sec1{
         display: flex;
@@ -36,4 +101,9 @@ header{
             color: $bg01;
         }
     }
+}
+.icons{
+    font-size: 1rem;
+}
+
 }

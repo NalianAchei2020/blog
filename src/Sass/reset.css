@@ -5,6 +5,7 @@
 *::after {
   box-sizing: border-box;
   font: inherit;
+  margin: 0;
 }
 
 /* Remove default margin */

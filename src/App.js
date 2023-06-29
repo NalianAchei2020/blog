@@ -1,10 +1,12 @@
-import './Sass/index.scss'
-import {BrowserRouter as Router,
+import './Sass/index.scss';
+import {
+  BrowserRouter as Router,
   Routes,
   Route,
-  } from 'react-router-dom';
+} from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './pages/home';
+import Footer from './Components/footer';
 
 function App() {
   return (
@@ -16,7 +18,8 @@ function App() {
           <Route path="/" element={<Home/>}></Route>
         </Routes>
       </Router>
-      
+      <Footer/>
+
     </div>
     </div>
   );
