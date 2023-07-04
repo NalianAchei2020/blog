@@ -183,10 +183,6 @@
 
     .section1 {
       padding-top: 5em;
-
-      .author-flex{
-
-      }
     }
   }
 
@@ -201,7 +197,6 @@
     @media (min-width: 48em) {
       display: grid;
       grid-template-columns: auto auto;
-      grid-template-rows: repeat(4 1fr);
       gap: 1.5rem;
     }
   }
@@ -290,7 +285,7 @@
     h5 {
       font-size: 19px !important;
       font-weight: 600 !important;
-      font-family: Noto Sans;
+      font-family:' Noto' Sans;
       margin-block: 1em;
     }
 
@@ -312,7 +307,6 @@
     .boxes {
       display: grid;
       grid-template-columns: auto auto;
-      grid-template-rows: repeat(2 1fr);
       gap: 0.5rem;
       width: 100%;
       max-width: 356px;
@@ -339,7 +333,6 @@
       @media (max-width: 19.25em) {
         width: 100px;
         padding: 2em 5px 0 5px;
-
         .text-nowrap {
           white-space: wrap !important;
         }
@@ -372,7 +365,6 @@
     .instagram-post {
       display: grid;
       grid-template-columns: auto auto auto;
-      grid-template-rows: repeat(3 1fr);
       gap: 0.5rem;
       width: 100%;
       max-width: 361px;
