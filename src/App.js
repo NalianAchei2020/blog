@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 import './Sass/index.scss';
 import {
   BrowserRouter as Router,
@@ -12,15 +13,14 @@ function App() {
   return (
     <div className="App">
       <div>
-      <Navbar/>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home/>}></Route>
-        </Routes>
-      </Router>
-      <Footer/>
-
-    </div>
+        <Navbar />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Router>
+        <Footer />
+      </div>
     </div>
   );
 }

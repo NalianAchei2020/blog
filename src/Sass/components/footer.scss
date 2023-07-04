@@ -1,91 +1,99 @@
 @use "../variables" as *;
-.footer{
-    width: 100%;
-    background-color: #f2f8f7;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    gap: 2em;
-    font-family: $ff;
-    
 
-    section{
+.footer {
+  width: 100%;
+  background-color: #f2f8f7;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 2em;
+  font-family: $ff;
+
+  section {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 90%;
-    }
-    .group{
-        width: 100%;
-    }
+  }
 
-    input{
-        width: 65%;
-        background-color: #dff1f0;
-        border: none;
-        font-size: 15px;
-        padding: .3em 1em;
-    }
+  .group {
+    width: 100%;
+  }
 
-    ul li{
-        font-size: 15px;
-        margin: 8px;
-        :hover{
-            color: #00aaa1;
-        }
-    }
+  input {
+    width: 65%;
+    background-color: #dff1f0;
+    border: none;
+    font-size: 15px;
+    padding: 0.3em 1em;
+  }
 
-    button{
-        background-color: #00aaa1;
-        color: #fff;
-        font-size: 15px;
+  ul li {
+    font-size: 15px;
+    margin: 8px;
+
+    :hover {
+      color: #00aaa1;
     }
-.foot-pa{
+  }
+
+  button {
+    background-color: #00aaa1;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  .foot-pa {
     font-size: 15px;
     font-family: $ff;
-}
+  }
 
-.footer-list{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   @media screen and (max-width: 22.313em){
-    width: 100%;
-    
-   }
-}
-@media screen and (48em <= width <= 74em){
+  .footer-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: 22.313em) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (48em <= width <= 74em) {
     display: grid;
     grid-template-columns: 1fr auto auto;
 
-    .footer-list{
-        width: 100%;
+    .footer-list {
+      width: 100%;
     }
 
-    .foot-pa{
-        width: 100%;
-        margin-top: -2em;
+    .foot-pa {
+      width: 100%;
+      margin-top: -2em;
     }
-    .group{
-        width: 100%;
 
-        input{
-            width: 64%;
-        }
-    }
-    section{
-        margin: 0;
-        width: 100%;
-      }
-}
+    .group {
+      width: 100%;
 
-    @media screen and (min-width:75em){
-        flex-direction: row;
-      section{
-        margin: 0;
-        width: 100%;
-      }
-      .footer-list{
-        flex-basis: 100%;
+      input {
+        width: 64%;
       }
     }
+
+    section {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 75em) {
+    flex-direction: row;
+
+    section {
+      margin: 0;
+      width: 100%;
+    }
+
+    .footer-list {
+      flex-basis: 100%;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+
 /* Box sizing rules */
 *,
 *::before,
@@ -47,6 +48,7 @@ body {
   font-family: Helvetica, sans-serif;
   overflow-x: hidden;
 }
+
 @media screen and (min-width: 48em) {
   body {
     min-width: 45em;
@@ -65,7 +67,7 @@ a:hover {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -77,11 +79,13 @@ svg {
 }
 
 /* Inherit fonts for inputs and buttons */
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
@@ -91,6 +95,7 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
 h1 {
   font-size: 27px;
   font-weight: 800;
@@ -133,7 +138,7 @@ body {
 
 button {
   background: rgb(0, 170, 161);
-  color: #FFFFFF;
+  color: #fff;
   border-radius: 5px;
   text-align: center;
   border: none;
@@ -149,6 +154,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 @media (min-width: 45em) {
   .container-card {
     flex-direction: row;
@@ -161,9 +167,11 @@ button {
   background-color: rgb(242, 248, 247);
   padding: 3em;
 }
+
 .container-one .col1 {
   width: 100%;
 }
+
 .container-one .col1 .col-flex {
   display: flex;
   flex-direction: column;
@@ -201,20 +209,25 @@ header {
   align-items: center;
   justify-items: center;
 }
-.nav .sec1, .nav .sec3 {
+
+.nav .sec1,
+.nav .sec3 {
   display: flex;
   gap: 2rem;
   font-size: 15px;
 }
+
 .sec2 span:first-child {
-  color: #FFFFFF;
+  color: #fff;
   background-color: rgb(0, 170, 161);
   font-size: 27px;
 }
+
 .sec2 span:last-child {
   font-size: 17px;
   font-weight: 600;
 }
+
 .sec2 span:last-child em {
   color: rgb(0, 170, 161);
-}/*# sourceMappingURL=index.css.map */
+}
