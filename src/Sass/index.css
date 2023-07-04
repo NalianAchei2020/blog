@@ -1,4 +1,4 @@
-@use "variables" as *;
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 
 /* Box sizing rules */
 *,
@@ -6,10 +6,11 @@
 *::after {
   box-sizing: border-box;
   font: inherit;
-  margin: 0;
+  overflow-x: hidden;
 }
 
 /* Remove default margin */
+body,
 h1,
 h2,
 h3,
@@ -23,17 +24,9 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* Set core root defaults */
@@ -41,22 +34,23 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html {
+html,
+body {
   height: 100%;
 }
 
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  width: 100%;
   min-width: 20em;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: $ff;
+  font-family: Helvetica, sans-serif;
   overflow-x: hidden;
-  font-family: $ff;
+}
 
-  @media screen and (min-width: 48em) {
+@media screen and (min-width: 48em) {
+  body {
     min-width: 45em;
   }
 }
@@ -72,6 +66,7 @@ a:hover {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -102,47 +97,137 @@ svg {
 }
 
 h1 {
-  font-size: $H1;
+  font-size: 27px;
   font-weight: 800;
   text-transform: capitalize;
 }
 
 h2 {
-  font-size: $H2;
+  font-size: 24px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
 h3 {
-  font-size: $H3;
+  font-size: 21px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
 h4 {
-  font-size: $H4;
+  font-size: 19px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
 h5 {
-  font-size: $H5;
+  font-size: 17px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
 h6 {
-  font-size: $H6;
+  font-size: 15px;
   font-weight: 600;
   text-transform: capitalize;
 }
 
+body {
+  font-family: "Noto Sans", cursive;
+}
+
 button {
-  background: $bg01;
-  color: $color3;
+  background: rgb(0, 170, 161);
+  color: #fff;
   border-radius: 5px;
   text-align: center;
   border: none;
   outline: none;
-  font-size: $fs30;
+  font-size: 15px;
+}
+
+.container-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 45em) {
+  .container-card {
+    flex-direction: row;
+  }
+}
+
+.container-one {
+  width: 100%;
+  min-width: 20em;
+  background-color: rgb(242, 248, 247);
+  padding: 3em;
+}
+
+.container-one .col1 {
+  width: 100%;
+}
+
+.container-one .col1 .col-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.iamge-round {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.image-one {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.image-two {
+  width: 129px;
+  height: 115px;
+  border-radius: 5px;
+}
+
+header {
+  height: 70px;
+  background-color: rgb(242, 248, 247);
+  padding-top: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  height: 27px;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav .sec1,
+.nav .sec3 {
+  display: flex;
+  gap: 2rem;
+  font-size: 15px;
+}
+
+.sec2 span:first-child {
+  color: #fff;
+  background-color: rgb(0, 170, 161);
+  font-size: 27px;
+}
+
+.sec2 span:last-child {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.sec2 span:last-child em {
+  color: rgb(0, 170, 161);
 }
