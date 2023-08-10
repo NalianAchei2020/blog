@@ -1,14 +1,11 @@
 /* eslint-disable react/jsx-no-bind */
 import './Sass/index.scss';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './pages/home';
 import Footer from './Components/footer';
 import Contact from './pages/contact';
+import Book from './pages/book';
 
 function App() {
   return (
@@ -19,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/signin" element={<Book />} />
           </Routes>
         </Router>
         <Footer />

@@ -28,7 +28,7 @@ const Navbar = () => {
               <i className="fa fa-search icons" aria-hidden="true" />
             </div>
             <div>
-              <a href="/signin">Write a book</a>
+              <a href="/signin">Write a Book</a>
             </div>
             <div className="dropdown">
               <span
@@ -122,7 +122,7 @@ const Navbar = () => {
             <i className="fa fa-search icons" aria-hidden="true" />
           </div>
           <div>
-            <a href="/signin">Login</a>
+            <a href="/signin">Write a Book</a>
           </div>
           <div className="dropdown">
             <span
