@@ -14,14 +14,22 @@ const Navbar = () => {
     <div>
       <header>
         <section className="hamberger">
-          <button className="mobile-nav-toggle" onClick={toggleNav} type="button">
+          <button
+            className="mobile-nav-toggle"
+            onClick={toggleNav}
+            type="button"
+          >
             <i className={isOpen ? 'fa fa-window-close' : 'fa fa-bars'} />
           </button>
         </section>
         <section>
           <div className="mobile-head">
-            <div><i className="fa fa-search icons" aria-hidden="true" /></div>
-            <div><a href="/signin">Login</a></div>
+            <div>
+              <i className="fa fa-search icons" aria-hidden="true" />
+            </div>
+            <div>
+              <a href="/signin">Write a book</a>
+            </div>
             <div className="dropdown">
               <span
                 className="dropdown-toggle"
@@ -32,18 +40,27 @@ const Navbar = () => {
                 En
               </span>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#fench">FR</a></li>
-
+                <li>
+                  <a className="dropdown-item" href="#fench">
+                    FR
+                  </a>
+                </li>
               </ul>
             </div>
-            <div><i className="fa fa-toggle-on icons" aria-hidden="true" /></div>
+            <div>
+              <i className="fa fa-toggle-on icons" aria-hidden="true" />
+            </div>
           </div>
         </section>
       </header>
       <nav className="nav" style={navStyle}>
         <div className="sec1">
-          <div className="nav-items"><a href="./">Home</a></div>
-          <div className="nav-items"><a href="./contact">Contact</a></div>
+          <div className="nav-items">
+            <a href="./">Home</a>
+          </div>
+          <div className="nav-items">
+            <a href="./contact">Contact</a>
+          </div>
           <div className="dropdown nav-items">
             <span
               className="dropdown-toggle"
@@ -54,9 +71,21 @@ const Navbar = () => {
               Categories
             </span>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="/technology">Technology</a></li>
-              <li><a className="dropdown-item" href="/travel">Travel</a></li>
-              <li><a className="dropdown-item" href="/Fashion">Fashion</a></li>
+              <li>
+                <a className="dropdown-item" href="/technology">
+                  Technology
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="/travel">
+                  Travel
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="/Fashion">
+                  Fashion
+                </a>
+              </li>
             </ul>
           </div>
           <div className="dropdown nav-items">
@@ -69,23 +98,32 @@ const Navbar = () => {
               pages
             </span>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="/author">Author</a></li>
-              <li><a className="dropdown-item" href="/page">Blog</a></li>
-              <li><a className="dropdown-item" href="/c">Contact</a></li>
+              <li>
+                <a className="dropdown-item" href="/author">
+                  Author
+                </a>
+              </li>
+              <li>
+                <a className="dropdown-item" href="/page">
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="sec2">
           <span>Note</span>
           <span>
-            Book
-            {' '}
-            <em>.</em>
+            Book <em>.</em>
           </span>
         </div>
         <div className="sec3">
-          <div><i className="fa fa-search icons" aria-hidden="true" /></div>
-          <div><a href="/signin">Login</a></div>
+          <div>
+            <i className="fa fa-search icons" aria-hidden="true" />
+          </div>
+          <div>
+            <a href="/signin">Login</a>
+          </div>
           <div className="dropdown">
             <span
               className="dropdown-toggle"
@@ -96,11 +134,16 @@ const Navbar = () => {
               En
             </span>
             <ul className="dropdown-menu">
-              <li><a className="dropdown-item" href="#french">FR</a></li>
-
+              <li>
+                <a className="dropdown-item" href="#french">
+                  FR
+                </a>
+              </li>
             </ul>
           </div>
-          <div><i className="fa fa-toggle-on icons" aria-hidden="true" /></div>
+          <div>
+            <i className="fa fa-toggle-on icons" aria-hidden="true" />
+          </div>
         </div>
       </nav>
     </div>

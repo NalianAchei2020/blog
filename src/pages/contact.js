@@ -3,25 +3,48 @@ import React from 'react';
 const Contact = () => (
   <section className="contact-main">
     <h1 className="mb-5 text-center">
-      <span className="col-title">Contact</span>
-      {' '}
-      us
+      <span className="col-title">Contact</span> us
     </h1>
     <article>
       <div className="contact-row1">
         <form>
-          <input type="text" name="name" className="name" placeholder="Name" required />
-          <input type="emal" name="email" className="email" placeholder="Email" required />
-          <input type="text" name="subject" className="subject" placeholder="Subject" required />
-          <textarea name="message" className="message" rows={5} cols={50} placeholder="Type your message" />
-          <button type="submit" className="btn-contact">Send Message</button>
+          <input
+            type="text"
+            name="name"
+            className="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="emal"
+            name="email"
+            className="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            className="subject"
+            placeholder="Subject"
+            required
+          />
+          <textarea
+            name="message"
+            className="message"
+            rows={5}
+            cols={50}
+            placeholder="Type your message"
+          />
+          <button type="submit" className="btn-contact">
+            Send Message
+          </button>
         </form>
       </div>
       <div className="contact-row2">
         <p className="mb-3">
-          Dynamically underwhelm integrated outsourcing
-          via timely models. Rapidiously reconceptualize visionary
-          imperatives without
+          Dynamically underwhelm integrated outsourcing via timely models.
+          Rapidiously reconceptualize visionary imperatives without
         </p>
         <p className="mb-3">blog.notebook@gmail.com</p>
         <p className="mb-3">+886554 654654</p>

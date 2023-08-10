@@ -32,9 +32,12 @@
 
 # 📖 Blog <a name="about-project"></a>
 
-This project is a blogging website
+This project is a blogging website. This platform is for storytelling and reading. Users can
+Share their stories, connect with writers, and explore captivating reads.
 
-*[Blog]* is a HTML and CSS project
+_[Blog]_ is a HTML and CSS project
+
+![image](https://github.com/NalianAchei2020/blog/assets/88759996/9fe2d586-57db-4b1d-89ce-ef2b80050b50)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,14 +49,15 @@ This project is a blogging website
 
 ### Key Features <a name="key-features"></a>
 
-- *User registration and authentication*
-- *Content management*
-- *Recent and past projects*
-- *Comment system*
-- *Search functionality*
-- *Social media integration*
+- _User registration and authentication_
+- _Content management_
+- _Recent and past projects_
+- _Comment system_
+- _Search functionality_
+- _Social media integration_
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
 - [Live Demo ]()
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -72,37 +76,40 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 sh
+
 - Create a folder
 - cd in to folder you just created
-- Type git clone ``https://github.com/NalianAchei2020/blog``
+- Type git clone `https://github.com/NalianAchei2020/blog`
 
 ### Install
 
 Install this project with:
+
 - cmd or vscode terminal
 - Install node js if you have not install
 - Go to your terminal and cd to folder, type npm install. This will install all the npm dependencies
 
 ### Usage
 
-To run the project, run ``npm start`` on the terminal
+To run the project, run `npm start` on the terminal
 
 ### Deployment
 
 You can deploy this project using:
 
- - render
- - netlify
- - vercel
+- render
+- netlify
+- vercel
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 *Nalian Achei*
+👤 _Nalian Achei_
+
 - Github: [@NalianAchei2020](https://github.com/NalianAchei2020)
 - Linkedin: [Nalian Achei](https://www.linkedin.com/in/nalian-achei-683208275)
 - Twitter: [@NalianAchei](https://twitter.com/NalianAchei?t=E3ePLcJ7B45dBa8SBFIXDg&s=09)
 
- ## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Future Features <a name="future-features"></a>
 
 - Analytics and tracking
 - Monetization options
