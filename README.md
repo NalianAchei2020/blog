@@ -35,9 +35,12 @@
 This project is a blogging website. This platform is for storytelling and reading. Users can
 Share their stories, connect with writers, and explore captivating reads.
 
-_[Blog]_ is a HTML and CSS project
+*[Blog]* is a React project
 
 ![image](https://github.com/NalianAchei2020/blog/assets/88759996/9fe2d586-57db-4b1d-89ce-ef2b80050b50)
+
+
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
