@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Data, authorData } from '../data';
 import '../Sass/index.scss';
 
@@ -18,11 +19,20 @@ const Home = () => {
           {firstTwoItems.map((item) => (
             <div className="row-flex" key={item}>
               <div className="col">
-                <img src={item.image} alt="travel" className="image-one" />
+                <Link to={`/title/${item.title}`}>
+                  {' '}
+                  <img
+                    src={item.image}
+                    alt={item.category}
+                    className="image-one"
+                  />
+                </Link>
               </div>
               <div className="card-text">
                 <span className="category">{item.category}</span>
-                <h1 className="m-2 title">{item.title}</h1>
+                <h1 className="m-2 title">
+                  <Link to={`title/${item.title}`}>{item.title}</Link>
+                </h1>
                 <ul className="list-unstyled d-flex flex-row gap-3 items">
                   <li>
                     <img
@@ -49,11 +59,21 @@ const Home = () => {
           {firstfourItems.map((item) => (
             <div className="row-flex2 p-16" key={item}>
               <div className="cart-image">
-                <img src={item.image} alt="travel" className="image-two" />
+                <Link to={`title/${item.title}`}>
+                  {' '}
+                  <img
+                    src={item.image}
+                    alt={item.category}
+                    className="image-two"
+                  />
+                </Link>
               </div>
               <div className="card-text2">
                 <span className="category">{item.category}</span>
-                <h5 className="title">{item.title}</h5>
+                <h5 className="title">
+                  {' '}
+                  <Link to={`title/${item.title}`}>{item.title}</Link>
+                </h5>
                 <ul className="list-unstyled d-flex flex-row gap-3 items">
                   <li>
                     <img
@@ -82,11 +102,21 @@ const Home = () => {
               <section className="mb-5 row-flex01" key={item}>
                 <section>
                   <div className="image-container">
-                    <img src={item.image} alt="travel" className="image1" />
+                    <Link to={`title/${item.title}`}>
+                      {' '}
+                      <img
+                        src={item.image}
+                        alt={item.category}
+                        className="image1"
+                      />
+                    </Link>
                   </div>
                   <div className="card-text">
                     <span className="category">{item.category}</span>
-                    <h1 className="mt-2 mb-2 title">{item.title}</h1>
+                    <h1 className="mt-2 mb-2 title">
+                      {' '}
+                      <Link to={`title/${item.title}`}>{item.title}</Link>
+                    </h1>
                     <ul className="list-unstyled d-flex flex-row gap-3 items">
                       <li>
                         <img
