@@ -2,20 +2,15 @@ import React from 'react';
 
 const Book = () => {
   return (
-    <section className="write-book">
-      <div className="sec2">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <span>Write on</span>
-        <span>
+    <section className="write-book  text-center ">
+      <div className="sec2 mt-5">
+        <span className="mx-2">Write on</span>
+        <span className="noteword">
           Notebook <em>.</em>
         </span>
       </div>
       <div className="book-tex">
-        <p>
+        <p className="my-2">
           <b>Write on notebook is very simple</b>
         </p>
         <p>
@@ -26,7 +21,7 @@ const Book = () => {
           type your personal information. (Name, Occupation, Address, Social
           media links)
         </p>
-        <p>
+        <p className="my-2">
           Send it on: <b>blog.notebook@gmail.com</b>
         </p>
       </div>
