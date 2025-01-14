@@ -1,0 +1,37 @@
+/* Custom styles for the blog */
+.btn-facebook {
+  background-color: #1877f2;
+  border-color: #1877f2;
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: #1464d9;
+  border-color: #1464d9;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
+/* Smooth transitions */
+.btn {
+  transition: all 0.3s ease;
+}
+
+/* Image hover effect */
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.01);
+}

@@ -19,7 +19,7 @@ const Home = () => {
           {firstTwoItems.map((item) => (
             <div className="row-flex" key={item}>
               <div className="col">
-                <Link to={`/title/${item.title}`}>
+                <Link to={`/${item.title}`}>
                   {' '}
                   <img
                     src={item.image}

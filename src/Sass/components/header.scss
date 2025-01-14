@@ -1,4 +1,4 @@
-@use "../variables" as *;
+@use '../variables' as *;
 
 header {
   display: flex;
@@ -6,6 +6,7 @@ header {
   background-color: $bg;
   padding: 0.5em 1em;
   width: 100%;
+  margin-bottom: 2rem;
 
   .mobile-head {
     display: flex;
